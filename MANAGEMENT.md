@@ -1,7 +1,7 @@
-# Project Management
+# Project Management
 ## Technical
-### Source Control
+### Source Control
 ### IDE / Environment
 ## Non-Technical
 ### Group Organisation
-### Meetings
+### Meetings
