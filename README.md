@@ -17,7 +17,7 @@ The server should be able to receive and process uploaded data from individual c
 #### Data Visualisation
 The server should have some functionality to visualise the received data in an intuitive and useful way.
 
-#### Web Serving
+#### Web Serving
 The server should serve a web site with information about the project, and providing access to visualised data.
 
 ## Documentation
