@@ -16,7 +16,7 @@ Some amount of data analysis should be carried out on the client (tracking cente
 #### Server Communication
 The client should be able to upload analysed data to our server for visualisation and public / remote access.
 
-#### Raspberry Pi "Plug & Play"
+#### Raspberry Pi "Plug & Play"
 The Raspberry Pi client should be easy to set up for non-technical users (ideally plug and play).
 
 ### Server
