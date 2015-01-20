@@ -20,4 +20,5 @@
 #### IDE / Environment
 ### Non-Technical
 #### Group Organisation
+* We need to buy a hamster
 #### Meetings
