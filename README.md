@@ -6,7 +6,7 @@
 #### Movement Tracking
 #### Data Analysis
 #### Server Communication
-#### Raspberry Pi "Plug & Play"
+#### Raspberry Pi "Plug & Play"
 
 ### Server
 In this specification, the server runs a web application to receive and visualise data from all clients.
@@ -22,11 +22,11 @@ The server should serve a web site with information about the project, and provi
 
 ## Documentation
 ### End User Guide
-### Technical Documentation
-## Project Management
+### Technical Documentation
+## Project Management
 ### Technical
-#### Source Control
+#### Source Control
 #### IDE / Environment
 ### Non-Technical
 #### Group Organisation
-#### Meetings
+#### Meetings
