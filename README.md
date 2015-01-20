@@ -22,14 +22,7 @@ The Raspberry Pi client should be easy to set up for non-technical users (ideall
 ### Server
 #### Upload Processing
 #### Data Visualisation
-#### Web Serving
+#### Web Serving
 ## Documentation
 ### End User Guide
-### Technical Documentation
-## Project Management
-### Technical
-#### Source Control
-#### IDE / Environment
-### Non-Technical
-#### Group Organisation
-#### Meetings
+### Technical Documentation
