@@ -12,6 +12,12 @@ Images should be captured as frequently as possible on the client device and
 processed locally on the client device. This processing should consist of motion
 detection capable of calculating the current position of an animal.
 
+##### Application safety around children
+At no point shall the application upload images taken from the camera to the
+website; all images are to be processed locally into data that contains no image
+data to avoid the risk of remotely storing images that potentially could contain
+children.
+
 #### Movement Tracking
 Small animals tend to either move quickly or stay still. This makes the job of
 detecting the location of such animals quite difficult at a low frame rate.
