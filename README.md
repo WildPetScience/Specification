@@ -9,6 +9,8 @@ routine and habits. The collected data can then be compared to the pets of other
 users of the software and some wild animals (using publicly available data
 from [Movebank](http://movebank.org)).
 
+### Project Success Criteria
+
 ## System Components
 The system will consist of the following components:
 
