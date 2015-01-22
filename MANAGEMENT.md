@@ -27,6 +27,24 @@ being changed then commit those changes to a separate branch.
 We will use UNIX line endings for most files; this means that on Windows
 computers, Notepad won't work as a text editor.
 
+### Testing
+Code will be tested frequently, both manually by developers during development,
+and automatically using a continuous integration platform such as Travis CI.
+
+Manual tests will most likely occur during regular development; if something
+doesn't work, it should be fixed fairly promptly. If the person who discovers it
+doesn't know how to fix, an issue should be filed on Github.
+
+Automatic tests will be hooked into Github; each new branch will have tests run
+on it by the CI platform, and developers should wait for tests to finish before
+committing.
+
+Where appropriate, code should be written with accompanying unit tests; these
+tests should live in a separate, non-production test folder and should cover as
+much critical code as possible. These tests will help us discover when a change
+breaks previously working functionality, as well as assisting the development of
+new code.
+
 ## Non-Technical
 ### Group Organisation
 Nick Rogers has been appointed as project manager, and so is responsible for 
