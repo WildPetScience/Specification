@@ -10,6 +10,12 @@ our master branch is stable and working as much as possible. This will ensure
 that when we come to demonstrate our software we always have a functional
 version, even if it is missing some features.
 
+Code will be peer-reviewed; this means that code should not be pushed directly
+to the `master` or `develop` branches. To add code, commit to a new branch,
+push the branch and submit a new pull request. All developers should "watch"
+the repos on Github so that they are notified of other developers' pull
+requests.
+
 ### IDE / Environment
 We will use IntelliJ IDEA to develop the Condor and Triton branches, and a
 regular text editor to develop the Specification branch.
@@ -24,3 +30,8 @@ computers, Notepad won't work as a text editor.
 ## Non-Technical
 ### Group Organisation
 ### Meetings
+
+Informal group meetings will be organised via Facebook and will normally occur
+in the slots allocated for group projects by the computer lab. All members
+shall attend all meetings if required, and all members must attend the formal
+meetings with the client.
