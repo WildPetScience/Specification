@@ -29,8 +29,12 @@ computers, Notepad won't work as a text editor.
 
 ## Non-Technical
 ### Group Organisation
-### Meetings
+Nick Rogers has been appointed as project manager, and so is responsible for 
+being our primary point of contact with the client. All communication
+should go via Nick (including deliverables, organisational emails etc)
+unless it is necessary to do otherwise.
 
+### Meetings
 Informal group meetings will be organised via Facebook and will normally occur
 in the slots allocated for group projects by the computer lab. All members
 shall attend all meetings if required, and all members must attend the formal
