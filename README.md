@@ -59,12 +59,6 @@ Users should be walked through the process of setting up the system in a way
 that is accessible without being patronising. Solutions to common issues will be
 included at each stage of the process.
 
-As the project is geared towards children, to accompany the main set of user
-documentation, there will be a "child-friendly" set of instructions that
-children can follow along with. This documentation should include instructions
-on setting the system up wih the help of an adult, as well as information about
-animal behaviour and what the system can tell them about their pet's habits.
-
 ### Technical Documentation
 As there are multiple people working together on this project, clear and
 effective technical documentation will be important to its success. The source
