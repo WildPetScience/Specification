@@ -30,6 +30,8 @@ team, and are a reasonable choice of such a device (for end users) in the
 real world.
 
 #### Image Capture
+
+--Test push--
 The client software should provide an interface through which images can be
 captured by a digital camera. These images should be captured as frequently 
 as possible on the client device and processed locally on the client device. 
