@@ -66,3 +66,13 @@ on setting the system up wih the help of an adult, as well as information about
 animal behaviour and what the system can tell them about their pet's habits.
 
 ### Technical Documentation
+As there are multiple people working together on this project, clear and
+effective technical documentation will be important to its success. The source
+code of the project will have JavaDoc comments used throughout development in
+order to facilitate automatic documentation generation. Additionally, external
+APIs should have clear documentation written in order that modules can be reused
+easily.
+
+All members of the team will be responsible for documenting code that they
+write, in a way that is consistent with the project's style. Our policy of code
+review will help to ensure that code committed is documented appropriately.
