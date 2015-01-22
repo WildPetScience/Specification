@@ -18,6 +18,13 @@ website; all images are to be processed locally into data that contains no image
 data to avoid the risk of remotely storing images that potentially could contain
 children.
 
+##### Image Capture in Darkness
+It may be necessary to capture movement data in the dark at some stage during
+the project (for example, due to a pet being nocturnal). This may entail using
+a camera with no infrared filter to capture images. The system's image
+processing module should be able to perform its analysis in a way that is
+agnostic of the illumination of the scene.
+
 #### Movement Tracking
 Small animals tend to either move quickly or stay still. This makes the job of
 detecting the location of such animals quite difficult at a low frame rate.
