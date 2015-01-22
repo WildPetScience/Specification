@@ -5,7 +5,10 @@
 ### Client
 The client software will run on a small, network-connected computer with a
 camera attached that is capable of processing the live video into data to be
-uploaded to the server.
+uploaded to the server. Our solution will be developed and tested on 
+Raspberry Pi devices, as they are easily available to all members of the
+team, and are a reasonable choice of such a device (for end users) in the 
+real world.
 
 #### Image Capture
 Images should be captured as frequently as possible on the client device and
