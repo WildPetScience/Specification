@@ -31,6 +31,21 @@ These components will be developed independently and concurrently by the team.
 #### Upload Processing
 #### Data Visualisation
 #### Web Serving
+
 ## Documentation
+This section of the specification deals with how the project will be documented.
+There are two important sets of documentation we will produce as part of the
+development process:
+
+* *Technical*: The system's code and external APIs should be thoroughly
+  documented, with the goal of making the project easily accessible to other
+  developers who may wish to use or modify the system for their own needs.
+
+* *End User*: The project involves end users deploying the system themselves
+  without direct expert help, and so the documentation should be easy to
+  understand and follow without having a technical background. Additionally,
+  as the project is targeted at children, another set of documentation
+  should be produced for their use.
+
 ### End User Guide
 ### Technical Documentation
