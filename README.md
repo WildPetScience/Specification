@@ -48,4 +48,21 @@ development process:
   should be produced for their use.
 
 ### End User Guide
+The guide for end users needs to be accessible to people without a technical
+background (i.e. no jargon, little assumed knowledge etc). The documentation
+should include information on setting up the system from scratch, using it
+once it has been configured, and common troubleshooting solutions. The
+documentation will be available as a README in the git repository, as well as by
+means of a standalone PDF download from the project web page.
+
+Users should be walked through the process of setting up the system in a way
+that is accessible without being patronising. Solutions to common issues will be
+included at each stage of the process.
+
+As the project is geared towards children, to accompany the main set of user
+documentation, there will be a "child-friendly" set of instructions that
+children can follow along with. This documentation should include instructions
+on setting the system up wih the help of an adult, as well as information about
+animal behaviour and what the system can tell them about their pet's habits.
+
 ### Technical Documentation
