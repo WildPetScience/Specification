@@ -87,6 +87,10 @@ The server should have some functionality to visualise the received data in an i
 #### Web Serving
 The server should serve a web site with information about the project, and providing access to visualised data.
 
+## Physical environment
+
+## Software environment
+
 ## Documentation
 This section of the specification deals with how the project will be documented.
 There are two important sets of documentation we will produce as part of the
