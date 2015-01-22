@@ -87,6 +87,40 @@ The server should have some functionality to visualise the received data in an i
 #### Web Serving
 The server should serve a web site with information about the project, and providing access to visualised data.
 
+## Physical environment
+There will be lots of physical constraints when setting up this software in a
+real environment, such as the type of cage, where the camera is positioned,
+lighting and so on. Because each environment will vary so much we hope to design
+our software such that it works in as many as possible.
+
+### Camera positioning
+The camera may be positioned over the top or at the side of the cage, provided
+that the camera has a good view of the animal under inspection. The animal's
+environment must be set up such that its activity can be determined from its
+location; food, water, wheel, bed and so on should be positioned in different
+parts of the cage from the camera's perspective.
+
+### Cage material
+The cage should be made from a clear material, or have an open side. This is to
+give the camera a clear, unobstructed view of the animal.
+
+#### Corners of cage
+The cage should have four markers in the corners visible to the camera; these
+will help the camera detect where the cage is when the cage or camera moves.
+
+## Hardware
+The device we shall use for demonstration will be a Raspberry Pi, with a Pi Noir
+camera attached. It will be connected to the internet via an Ethernet cable,
+however as long as the user can set up a suitable connection to the internet,
+the specific connection being used won't matter. The Pi will be mounted above
+the cage using some sort of mount.
+
+## Software environment
+We will distribute a cut-down Linux operating system that contains our software
+pre-installed. These distributions will be based on an existing Linux operating
+system (such as Raspbian) and will be configured to connect to the internet and
+start our software.
+
 ## Documentation
 This section of the specification deals with how the project will be documented.
 There are two important sets of documentation we will produce as part of the
