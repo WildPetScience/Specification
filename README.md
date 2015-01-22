@@ -1,17 +1,35 @@
 # Wild Pet Science - Specification
 ## Overview and Use Cases
 ## System Components
+
 ### Client
-In this specification, 'client' refers to a Raspberry Pi device that users run our software on. This section details the functionality that such a client should include in order for the project brief to be met.
+The client software will run on a small, network-connected computer with a
+camera attached that is capable of processing the live video into data to be
+uploaded to the server.
 
 #### Image Capture
-The client should be able to capture images from a Raspberry Pi Noir camera. An appropriate API should be exposed (possibly through use of a third party library) to allow this.
+Images should be captured as frequently as possible on the client device and
+processed locally on the client device. This processing should consist of motion
+detection capable of calculating the current position of an animal.
+
+##### Application safety around children
+At no point shall the application upload images taken from the camera to the
+website; all images are to be processed locally into data that contains no image
+data to avoid the risk of remotely storing images that potentially could contain
+children.
 
 #### Movement Tracking
-Functionality should be included to track movement of objects between scenes captured by the camera.
+Small animals tend to either move quickly or stay still. This makes the job of
+detecting the location of such animals quite difficult at a low frame rate.
+The application should be able to cope in this situation and still work out the
+location of the animal.
 
 #### Data Analysis
-Some amount of data analysis should be carried out on the client (tracking center of movement, number of objects, activity classification).
+The movement tracking software will output a stream of data containing the
+location of the animal. These data must then be analysed to work out what the
+animal is doing. This can either be selected by the user (for example certain
+areas representing certain activities), or detected by the program (for example
+based on time of day).
 
 #### Server Communication
 The client should be able to upload analysed data to our server for visualisation and public / remote access.
