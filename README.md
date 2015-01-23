@@ -170,4 +170,25 @@ development process:
   should be produced for their use.
 
 ### End User Guide
+The guide for end users needs to be accessible to people without a technical
+background (i.e. no jargon, little assumed knowledge etc). The documentation
+should include information on setting up the system from scratch, using it
+once it has been configured, and common troubleshooting solutions. The
+documentation will be available as a README in the git repository, as well as by
+means of a standalone PDF download from the project web page.
+
+Users should be walked through the process of setting up the system in a way
+that is accessible without being patronising. Solutions to common issues will be
+included at each stage of the process.
+
 ### Technical Documentation
+As there are multiple people working together on this project, clear and
+effective technical documentation will be important to its success. The source
+code of the project will have JavaDoc comments used throughout development in
+order to facilitate automatic documentation generation. Additionally, external
+APIs should have clear documentation written in order that modules can be reused
+easily.
+
+All members of the team will be responsible for documenting code that they
+write, in a way that is consistent with the project's style. Our policy of code
+review will help to ensure that code committed is documented appropriately.
