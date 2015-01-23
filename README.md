@@ -9,6 +9,39 @@ routine and habits. The collected data can then be compared to the pets of other
 users of the software and some wild animals (using publicly available data
 from [Movebank](http://movebank.org)).
 
+### Project Success Criteria
+The project will be judged as having been successful if the following system
+functionality exists in a correct, well tested and well-documented state:
+
+* Users should be able to plug a Raspberry Pi device into a power source,
+  connect it to a camera and to a network, then be able to configure the device
+  appropriately to take pictures of a small animal in a cage.
+
+* Once configured, the system should take periodic pictures of the animal in its
+  cage by using the attached Raspberry Pi camera.
+
+* These pictures should then be used to track the movement of the animal over
+  time.
+
+* Analysis should be performed on the collected image data to reconstruct
+  movement paths around the environment, and to make inferences about the
+  activities being performed by the animal.
+
+* This data should be uploaded to a server, where users should be able to log in
+  with a Google account to view their animal's data and compare it to data
+  obtained from open data sets on animal movement.
+
+Additionally, there are some important criteria relating to how the project is
+managed and administered that will factor into our evaluation of success:
+
+* All members of the team should have a significant and equal contributing role
+  to the project.
+
+* Time should be managed effectively, so that the overall time taken for the
+  project is close to that recommended in the briefing book.
+
+If the above criteria are met then the project will be judged a success.
+
 ## System Components
 The system will consist of the following components:
 
