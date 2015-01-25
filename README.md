@@ -114,11 +114,22 @@ In this specification, the server runs a web application to receive and visualis
 #### Upload Processing
 The server should be able to receive and process uploaded data from individual clients.
 
-#### Data Visualisation
-The server should have some functionality to visualise the received data in an intuitive and useful way.
+#### Front End
+The front end will allow the user to select multiple data sets in order to view
+and compare the movement of animals.
 
-#### Web Serving
-The server should serve a web site with information about the project, and providing access to visualised data.
+##### Data Visualisation
+The server should have some functionality to visualise the received data in an
+intuitive and useful way. Data shown for each animal should include a breakdown
+of time spent in user-defined zones/activities. A graphical display of the
+movement of the animal should also be included, for example a heatmap, or a
+step-through display of the animal's path over time.
+
+##### Web Serving
+The server should serve a website with information about the project, and
+providing a menu of available animals and access to their visualised data. The
+website should have an intuitive layout that is accessible and appealing to
+children.
 
 ## Physical environment
 There will be lots of physical constraints when setting up this software in a
