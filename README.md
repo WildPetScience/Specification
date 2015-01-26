@@ -104,9 +104,10 @@ are being classified.
 
 #### Server Communication
 The client software will periodically upload analysed data to the server for 
-processing, visualisation and public/remote access. Data will be stored in the 
-server's database and users will be able to access it by logging in with their 
-Google account.
+processing, visualisation and public/remote access. These data will represent 
+the positions of the pet in the cage since the last upload. All information 
+will be stored in the server's database and users will be able to access it 
+by logging in with their Google account.
 
 #### Raspberry Pi "Plug & Play"
 The Raspberry Pi client should be easy to set up for non-technical users (ideally plug and play).
