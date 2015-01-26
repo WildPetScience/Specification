@@ -63,6 +63,7 @@ team, and are a reasonable choice of such a device (for end users) in the
 real world.
 
 #### Image Capture
+
 The client software should provide an interface through which images can be
 captured by a digital camera. These images should be captured as frequently 
 as possible on the client device and processed locally on the client device. 
@@ -83,24 +84,41 @@ a camera with no infrared filter to capture images. The system's image
 processing module should be able to perform its analysis in a way that is
 agnostic of the illumination of the scene.
 
+##### Image normalisation
+As it is impossible for the user to keep the camera from moving, images will be
+normalised so that they provide a constant viewpoint over the cage. This will be
+accoplished by the use of special visual markers the user would have to apply on
+the corners of the animal's cage.
+
 #### Movement Tracking
-Small animals tend to either move quickly or stay still. This makes the job of
-detecting the location of such animals quite difficult at a low frame rate.
-The application should be able to cope in this situation and still work out the
-location of the animal.
+The stream of images provided through the capture interface will be analysed
+by a motion tracker in order to detect the position (XY coordinates) of the animal
+in each image. This data will be in turn used to determine what the animal was doing
+at a given time.
+
+##### Performance
+Small animals tend to either move quickly or stay still. This implies that the
+motion tracker algorithm should be able to operate at frame rates of at least 10-15 FPS
+in order to achieve reasonable accuracy in determining the location of the animal.
 
 #### Data Analysis
 The movement tracking software will output a stream of data containing the
-location of the animal. These data must then be analysed to work out what the
-animal is doing. This can either be selected by the user (for example certain
-areas representing certain activities), or detected by the program (for example
-based on time of day).
+location of the animal at a given time. These data must then be analysed to provide 
+different kinds of information to the user about the animal.
 
-##### User Activity Identification
+##### Behavior Identification
 It should be possible for the user to manually specify areas of interest specific
-to their pet (for example, picking out the sleeping area and water bottle). This
-identification will provide hints to the data analysis module when activities
-are being classified.
+to their pet (for example, picking out the sleeping area and water bottle). The behavior
+of the animal will be determined based on its proximity to such areas of interest.
+Also, the software should be able to identify the times during which each behavior is most
+frequent (for example, determine that the animal sleeps mostly during the day, and
+forages during evenings and mornings).
+
+##### Migration Patterns
+The data should also be used to determine the movement of the animal during some 
+timeframe (for example: last hour, last 24 hours, etc.). As the visualisation of this data
+is would be done by superimposing the migration pattern on a still image of the cage,
+this feature would only be available on the client software.
 
 #### Server Communication
 The client software will periodically upload analysed data to the server for 
