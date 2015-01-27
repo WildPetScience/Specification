@@ -30,7 +30,7 @@ This part of the project has been estimated to take between 20 and 25 hours.
 As detailed in the specification, users need to be able to perform some basic
 setup tasks when the system is first used, as well as potentially reconfiguring
 the system. The primary goal of Bruce's work on the project is to implement a
-web application written using the (Grails/SparkJava) framework to serve a site
+web application written using the SparkJava framework to serve a site
 on the user's local network. This site will be a single page with a small number
 of controls on it. On the configuration site, AJAX requests will provide a
 convenient way of relaying configuration information back to the Java
