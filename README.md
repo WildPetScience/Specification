@@ -1,10 +1,20 @@
 # Wild Pet Science - Specification
 
+## Background & Motivation
+Children often have a small pet - for example, a hamster or a gerbil. This
+project aims to use the sense of ownership children often feel about their pets
+to drive an interest in science by allowing children to gather interesting
+statistics about their pet. Professional ecological studies use sophisticated
+techniques such as sonar and GPS to track animals, but this project aims to take
+a low cost and user-friendly approach using widely available computing hardware
+together with custom software.
+
 ## Overview and Use Cases
 The Wild Pet Science project allows users to compare their pets' behaviour to
-other pets and animals in the wild. This is accomplished using a small computer
-that tracks the position of a pet in its cage using a small digital camera and
-image processing techniques, then analyses the data for information about 
+other pets and animals in the wild. Our main metric for comparison will be the
+movement of the animal, using a computer and small digital camera that tracks 
+the position of a pet in its cage. Image processing techniques will be applied 
+to prepare the data, along with statistical analysis to infer information about 
 routine and habits. The collected data can then be compared to the pets of other
 users of the software and some wild animals (using publicly available data
 from [Movebank](http://movebank.org)).
