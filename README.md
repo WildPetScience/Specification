@@ -55,8 +55,8 @@ If the above criteria are met then the project will be judged a success.
 ## System Components
 The system will consist of the following components:
 
-* *Server*: The server collects uploaded data about animals and displays results
-  to users.
+* *Server*: The server will collect and store uploaded data about each the
+  users' animals and will display the results in an HTML GUI.
 
 * *Client*: The client runs on a lightweight computer in the user's home and
   captures and analyses images from a live camera and uploads movement 
@@ -179,15 +179,21 @@ This approach leaves the option to run the application manually open for technic
 users and developers.
 
 ### Server
-In this specification, the server runs a web application to receive and visualise 
-data from all clients.
+The server will be comprised of two aspects:
+
+* A RESTful API that can be used by the client application and the web frontend
+
+* An HTML frontend that uses Javascript to communicate with the API to display and
+  compare results from various animals
 
 #### Upload Processing
-The server should be able to receive and process uploaded data from individual clients.
+The API will be able to receive and process uploaded data from individual clients and
+store the subsequent results of this processing in a database for subsequent retrieval
+and analysis.
 
 #### Front End
-The front end will allow the user to select multiple data sets in order to view
-and compare the movement of animals.
+The front end will use the API REST endpoints and allow the user to select multiple
+data sets in order to view and compare the movement of animals.
 
 ##### Data Visualisation
 The server should have some functionality to visualise the received data in an
