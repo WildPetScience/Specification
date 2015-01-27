@@ -26,9 +26,14 @@ This part of the project deals with the motion tracking of the hamster inside
 the cage, using as input the stream of photos captured by the camera. As 
 preliminary steps, the software will perform normalisation and noise reduction on 
 each frame. The implementation will use openCV libraries and the work is expected 
-to take between 10 and 15 hours.
+to take 15 to 20 hours.
 
 #### Normalisation
+Small movements of the camera or the cage are likely to occur while recording the 
+image and this section will ensure that this doesn't affect the output. The cage 
+of the hamster will have markers in the corners to allow the program to identify 
+its edges. Their position will be tracked and if any changes occur, all the relevant 
+coordinates will be normalised.  
 
 #### Noise Reduction
 
@@ -38,10 +43,10 @@ are compared with other similar patches found in the photo. The values of their
 pixels will be averaged and updated for each patch. Since the camera module provides
 a long stream of frames, it also is possible to compare each frame with a number of
 nearby frames in order to obtain the best pixels values. 
-Both these algorithms are restricted by the frequency of frames taken by the camera 
-and the processing speed of the Raspberry Pi. The speed and the quality of the 
-resulting image are both relevant, so different algorithms will be tested on our 
-test data set in order to choose the optimal one. 
+Both methods are restricted by the frequency of frames taken by the camera and the 
+processing power of the Raspberry Pi. The speed and the quality of the resulting 
+image are both relevant, so different algorithms will be tested on our data set 
+in order to choose the optimal one. 
 
 
 ## Bruce
