@@ -125,7 +125,8 @@ animal (either small changes in the habitat, or motions caused by people checkin
 the cage).
 
 The main challenge this module presents is to implement an efficient motion tracker
-algorithm capable of processing at least 10 frames per second.
+algorithm capable of running on a low-performance Raspberry Pi, while still producing
+accurate data.
 
 
 ## Will
