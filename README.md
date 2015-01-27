@@ -177,10 +177,14 @@ will help the camera detect where the cage is when the cage or camera moves.
 
 ## Hardware
 The device we shall use for demonstration will be a Raspberry Pi, with a Pi Noir
-camera attached. It will be connected to the internet via an Ethernet cable,
-however as long as the user can set up a suitable connection to the internet,
-the specific connection being used won't matter. The Pi will be mounted above
-the cage using some sort of mount.
+camera attached. This camera will point at the cage and detect the location of
+the animal under study. The Pi Noir camera is capable of low-light and
+infra-red vision meaning that we will be able to track the animal during the
+night.
+
+The Pi will also be connected to the internet; for a reliable connection we
+recommend that an Ethernet connection is used, however the application will
+work with any kind of reliable internet connection.
 
 ## Software environment
 We will distribute a cut-down Linux operating system that contains our software
