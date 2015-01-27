@@ -129,7 +129,34 @@ will be stored in the server's database and users will be able to access it
 by logging in with their Google account.
 
 #### Raspberry Pi "Plug & Play"
-The Raspberry Pi client should be easy to set up for non-technical users (ideally plug and play).
+As this project is primarily targeted at non-technical end users, a key goal of
+the project is to be easy to set up. Ideally, users should be able to connect
+their Raspberry Pi to a power source and the internet, and have the system
+immediately available for use with no "under the hood" interactions (e.g. having
+to issue shell commands or connect the device to a monitor to see information).
+
+##### Configuration Interface
+Unfortunately, there will be a small amount of user setup involved with the system
+regardless of our approach. To avoid having to connect external devices to the
+Raspberry Pi, a web configuration interface should be provided by the device
+when it is connected to a local network. This interface should provide the
+following functions:
+
+* *Start / Stop*: the user should be able to start and stop the system using the
+  configuration interface (for example, on the first setup of the system).
+
+* *View Image*: a view from the camera should be presented to the user by this
+  interface to ensure that the camera is oriented correctly, and captures an
+  appropriate view of the animal in its cage.
+
+* *Mark Zones*: the user should be able to mark and label areas of interest on the 
+  view from the camera, to be used by the analysis software in determining
+  animal activity. These should be reconfigurable (for example if the layout of
+  the cage changes).
+
+* *Code Generation*: the configuration interface should allow a code to be
+  generated and registered with the WildPetScience servers. This code allows
+  users to view and share their own data.
 
 ### Server
 In this specification, the server runs a web application to receive and visualise 
