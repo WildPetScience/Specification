@@ -91,10 +91,11 @@ accoplished by the use of special visual markers the user would have to apply on
 the corners of the animal's cage.
 
 #### Movement Tracking
-The stream of images provided through the capture interface will be analysed
-by a motion tracker in order to detect the position (XY coordinates) of the animal
-in each image. This data will be in turn used to determine what the animal was doing
-at a given time.
+The stream of images provided through the capture interface will be analysed by
+a motion tracker in order to detect the position (XY coordinates) of the animal
+in each image. These coordinates will be compared to a set of user defined
+zones (such as water, food, bed etc) to determine what the animal is currently
+doing.
 
 ##### Performance
 Small animals tend to either move quickly or stay still. This implies that the
