@@ -98,6 +98,36 @@ More sophisticated analysis may further be produced such as the most common
 transition chains of the animal moving from zone to zone.
 
 ## Vlad
+**Motion tracking**
+
+We expect this part of the project to take between 15-20 hours.
+
+### Input / output
+The module Vlad is assigned to work on will receive a stream of images as input
+from the image normalisation module and output a stream of data containing:
+
+* The coordinates of the center of motion (x,y)
+
+* Time the position was recorded (t)
+
+* Other metadata relevant to the analysis stage, such as the probability of the
+animal being located at those coordinates (m)
+
+### Motion tracking algorithm
+For the purpose of implementing the motion tracking algorithm, the open source
+computer vision and graphics library OpenCV will be used to find differences between
+consecutive images in the input stream. Clustering algorithms will then be used to
+determine areas of motion within the cage, the center of the largest area being
+the most likely place where the animal is located.
+
+The algorithm will also be able to identify which motions are not caused by the
+animal (either small changes in the habitat, or motions caused by people checking
+the cage).
+
+The main challenge this module presents is to implement an efficient motion tracking
+algorithm capable of running on a low-performance Raspberry Pi, while still producing
+accurate data.
+
 
 ## Will
 **Build system, image capture and testing**

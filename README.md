@@ -109,8 +109,8 @@ doing.
 
 ##### Performance
 Small animals tend to either move quickly or stay still. This implies that the
-motion tracker algorithm should be able to operate at frame rates of at least 10-15 FPS
-in order to achieve reasonable accuracy in determining the location of the animal.
+motion tracker algorithm should be able to operate at frame rates high enough for it
+to achieve reasonable accuracy in determining the location of the animal.
 
 #### Data Analysis
 The movement tracking software will output a stream of data containing the
