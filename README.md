@@ -158,6 +158,15 @@ following functions:
   generated and registered with the WildPetScience servers. This code allows
   users to view and share their own data.
 
+##### System Image
+The Raspberry Pi boots its operating system from an SD card. In order for users
+to be able to use the system with as little setup as possible, we will
+distribute a system image designed specifically to run our software. Users will
+still have to burn their own SD cards, but this is only solvable if we handle
+physical distribution of the cards, which is beyond the scope of the project. 
+This approach leaves the option to run the application manually open for technical
+users and developers.
+
 ### Server
 In this specification, the server runs a web application to receive and visualise 
 data from all clients.
