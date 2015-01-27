@@ -60,6 +60,42 @@ the project progresses, certain approaches may become more or less viable.
 ## Nick
 
 ## Stuart
+**Analysis of movement data**
+
+This part of the project has been estimated to take between 15 and 20 hours.
+
+### Data Input
+After an image of the monitored habitat has been captured and processed, some data for that frame will be produced, including:
+
+
+* The position of the animal within the habitat in (x,y) coordinates.
+
+* Various metadata produced by the processing stage, e.g. the likelihood of the
+  animal being in that position.
+
+The following data will also be used for analysis:
+
+* The time at which the frame is produced.
+
+* The positions of zones that are marked in the config stage, along with their
+  descriptions or associated activities (sleeping, feeding etc.).
+
+### Analysis
+The relevant data will be compiled and sent to the server after the session
+stops. The analysis includes:
+
+* The position of the animal and the zones will be used to produce a set of
+  (x,y,t,zone) values for use by the front end libraries that will produce
+  heatmaps.
+
+* The time spent in each zone, along with existing data about the zone (size,
+  location, description).
+
+* The speed of the animal will be computed using differences in displacement to
+  produce (v,t) values, graphed as a measure of activity.
+
+More sophisticated analysis may be further be produced such as the most common
+transition chains of the animal moving from zone to zone.
 
 ## Vlad
 
