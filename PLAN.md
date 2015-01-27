@@ -94,7 +94,7 @@ periodically. The analysis includes:
 * The speed of the animal will be computed using differences in displacement to
   produce (v,t) values, graphed as a measure of activity.
 
-More sophisticated analysis may be further be produced such as the most common
+More sophisticated analysis may further be produced such as the most common
 transition chains of the animal moving from zone to zone.
 
 ## Vlad
