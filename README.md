@@ -1,6 +1,6 @@
 # Wild Pet Science - Specification
 
-## Background & Motivation
+## Background & Motivation
 Children often have a small pet - for example, a hamster or a gerbil. This
 project aims to use the sense of ownership children often feel about their pets
 to drive an interest in science by allowing children to gather interesting
@@ -136,7 +136,8 @@ The client software will periodically upload analysed data to the server for
 processing, visualisation and public/remote access. These data will represent 
 the positions of the pet in the cage since the last upload. All information 
 will be stored in the server's database and users will be able to access it 
-by logging in with their Google account.
+by entering a unique memorable token (generated during system setup). All data
+will be public and anonymous, so tokens can also be used to share data.
 
 #### Raspberry Pi "Plug & Play"
 As this project is primarily targeted at non-technical end users, a key goal of
