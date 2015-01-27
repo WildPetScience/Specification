@@ -15,9 +15,47 @@ fully, as well as providing an overview of project management policy.
 In contrast, here the project is broken down into implementation modules,
 separated by the team member primarily responsible.
 
+All estimated times given here include the writing of tests to be run by our
+Travis CI continuous integration system, as well as carrying out suitability and
+integration testing.
+
 ## Antoanela
 
 ## Bruce
+**Config Interface and System Image Creation**
+
+This part of the project has been estimated to take between 20 and 25 hours.
+
+### Web Serving
+As detailed in the specification, users need to be able to perform some basic
+setup tasks when the system is first used, as well as potentially reconfiguring
+the system. The primary goal of Bruce's work on the project is to implement a
+web application written using the (Grails/SparkJava) framework to serve a site
+on the user's local network. This site will be a single page with a small number
+of controls on it. On the configuration site, AJAX requests will provide a
+convenient way of relaying configuration information back to the Java
+application.
+
+### Zone Marking
+The most technically challenging aspect of the configuration interface will be
+the creation of a facility for marking zones on an image of the cage. To do
+this, an HTML canvas element will be used, and a custom module developed in
+Javascript to allow drawing of zones.
+
+### Other Configuration
+The other elements of configuration (start / stop and code generation) can be
+implemented relatively easily by AJAX calls to web framework endpoints.
+
+### System Image Creation
+Towards the end of the project, Bruce's work will involve investigating
+techniques for creating a burnable Raspberry Pi SD card image. This will involve
+creating a method of including the app in a minimal Linux image, then writing
+build scripts to automate the process.
+
+A potentially promising approach to this task that has been investigated briefly
+is using a base Arch Linux system together with Docker to run the application in
+a more platform-independent way. However, depending on how the development of
+the project progresses, certain approaches may become more or less viable.
 
 ## Nick
 
@@ -31,7 +69,6 @@ separated by the team member primarily responsible.
 We expect this part of the project to take approximately 20-30 hours.
 
 ### Build system
-
 This project will need to run on a wide range of platforms - development will
 happen on Windows, Mac OS X and Linux, and deployment on a Raspberry Pi. Hence
 it is important to ensure that our project will work reliably in a wide range
