@@ -81,8 +81,8 @@ The following data will also be used for analysis:
   descriptions or associated activities (sleeping, feeding etc.).
 
 ### Analysis
-The relevant data will be compiled and sent to the server after the session
-stops. The analysis includes:
+The relevant data will be produced/updated and sent to the server after each
+frame. The analysis includes:
 
 * The position of the animal and the zones will be used to produce a set of
   (x,y,t,zone) values for use by the front end libraries that will produce
