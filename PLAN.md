@@ -87,6 +87,35 @@ the project progresses, certain approaches may become more or less viable.
 
 ## Nick
 
+### Cloud-based server
+
+#### RESTful API
+Nick will implement the java-powered RESTful API that will interact with both the
+client-side application and the web frontend. This API will be hosted on a cloud-based
+processing engine in order to simplify scalability as the user base of the application
+grows.
+
+##### Interaction with client-side application
+The API must have a persistent database in which it can store data transmitted to it
+by the client-side application. The server may perform additional processing on the
+data, such as updating aggregate statistics, prior to storing it in the database.
+
+##### Interaction with web frontend
+The web frontend will allow users to view and compare the data on their animal with
+other animals stored in the database. Nick will implement the necessary REST endpoints
+in the API to allow the relevant data to be trivially retrieved from the database and
+presented for manipulation and representation to the user in the web frontend.
+
+#### Web Frontend
+Nick will implement the web frontend that will communicate with the API in order to
+present the data to users in a colourful, informative and entertaining fashion. This will
+involve the use of various web frameworks and javascript-powered presentation engines.
+
+### MoveBank integration
+Nick will organise the processing and importation of data from public sources such as
+MoveBank. This will be delegated to team members depending on the workload and technical
+skills of each member.
+
 ## Stuart
 **Analysis of movement data**
 
