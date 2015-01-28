@@ -117,6 +117,13 @@ The movement tracking software will output a stream of data containing the
 location of the animal at a given time. These data must then be analysed to provide 
 different kinds of information to the user about the animal.
 
+##### Movebank Data
+As part of the data analysis process, relevant publicly available data from
+[Movebank](http://www.movebank.org) should be obtained. This data should then be
+processed to make it more directly comparable with data in our movement format.
+This task should be a one off, as the same public data should be used by all
+users for comparisons.
+
 ##### Behavior Identification
 It should be possible for the user to manually specify areas of interest specific
 to their pet (for example, picking out the sleeping area and water bottle). The behavior
@@ -125,10 +132,10 @@ Also, the software should be able to identify the times during which each behavi
 frequent (for example, determine that the animal sleeps mostly during the day, and
 forages during evenings and mornings).
 
-##### Migration Patterns
+##### Movement Patterns
 The data should also be used to determine the movement of the animal during some 
 timeframe (for example: last hour, last 24 hours, etc.). As the visualisation of this data
-is would be done by superimposing the migration pattern on a still image of the cage,
+is would be done by superimposing the movement pattern on a still image of the cage,
 this feature would only be available on the client software.
 
 #### Server Communication
