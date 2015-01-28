@@ -93,7 +93,9 @@ the project progresses, certain approaches may become more or less viable.
 Nick will implement the java-powered RESTful API that will interact with both the
 client-side application and the web frontend. This API will be hosted on a cloud-based
 processing engine in order to simplify scalability as the user base of the application
-grows.
+grows. The API will have thorough unit tests written for every endpoint where practical.
+
+It is predicted that the API will take approximately 20 hours to develop and test.
 
 ##### Interaction with client-side application
 The API must have a persistent database in which it can store data transmitted to it
@@ -111,10 +113,14 @@ Nick will implement the web frontend that will communicate with the API in order
 present the data to users in a colourful, informative and entertaining fashion. This will
 involve the use of various web frameworks and javascript-powered presentation engines.
 
+It is predicated that the frontend will take approximately 40 hours to develop and test.
+
 ### MoveBank integration
 Nick will organise the processing and importation of data from public sources such as
 MoveBank. This will be delegated to team members depending on the workload and technical
 skills of each member.
+
+It is predicated that this will take 10-20 workhours to implement.
 
 ## Stuart
 **Analysis of movement data**
