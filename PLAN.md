@@ -8,45 +8,45 @@ programming skills, and that the overall division of work remains close to
 equal.
 
 ## Overview
-The specification document for the project includes a detailed breakdown of what
-the requirements and functionality of the system should be when implemented
-fully, as well as providing an overview of project management policy.
+The specification document for the project includes a detailed breakdown of
+what the requirements and functionality of the system should be when
+implemented fully, as well as providing an overview of project management
+policy.
 
 In contrast, here the project is broken down into implementation modules,
 separated by the team member primarily responsible.
 
 All estimated times given here include the writing of tests to be run by our
-Travis CI continuous integration system, as well as carrying out suitability and
-integration testing.
+Travis CI continuous integration system, as well as carrying out suitability
+and integration testing.
 
 ## Antoanela
 
 ### Image Processing
-This part of the project deals with the motion tracking of the hamster inside 
-the cage, using as input the stream of photos captured by the camera. As 
-preliminary steps, the software will perform normalisation and noise reduction on 
-each frame. The implementation will use openCV libraries and the work is expected 
-to take 15 to 20 hours.
+This part of the project deals with the motion tracking of the hamster inside
+the cage, using as input the stream of photos captured by the camera. As
+preliminary steps, the software will perform normalisation and noise reduction
+on each frame. The implementation will use openCV libraries and the work is
+expected to take 15 to 20 hours.
 
 #### Normalisation
-Small movements of the camera or the cage are likely to occur while recording the 
-image and this section will ensure that this doesn't affect the output. The cage 
-of the hamster will have markers in the corners to allow the program to identify 
-its edges. Their position will be tracked and if any changes occur, all the relevant 
-coordinates will be normalised.  
+Small movements of the camera or the cage are likely to occur while recording
+the image and this section will ensure that this doesn't affect the output. The
+cage of the hamster will have markers in the corners to allow the program to
+identify its edges. Their position will be tracked and if any changes occur,
+all the relevant coordinates will be normalised.
 
 #### Noise Reduction
-
-Image denoising can be performed either on each image individually or by comparing 
-consecutive frames. To do denoising on one single frame, small patches of the image 
-are compared with other similar patches found in the photo. The values of their 
-pixels will be averaged and updated for each patch. Since the camera module provides
-a long stream of frames, it also is possible to compare each frame with a number of
-nearby frames in order to obtain the best pixels values. 
-Both methods are restricted by the frequency of frames taken by the camera and the 
-processing power of the Raspberry Pi. The speed and the quality of the resulting 
-image are both relevant, so different algorithms will be tested on our data set 
-in order to choose the optimal one. 
+Image denoising can be performed either on each image individually or by
+comparing consecutive frames. To do denoising on one single frame, small
+patches of the image are compared with other similar patches found in the
+photo. The values of their pixels will be averaged and updated for each patch.
+Since the camera module provides a long stream of frames, it also is possible
+to compare each frame with a number of nearby frames in order to obtain the
+best pixels values.  Both methods are restricted by the frequency of frames
+taken by the camera and the processing power of the Raspberry Pi. The speed and
+the quality of the resulting image are both relevant, so different algorithms
+will be tested on our data set in order to choose the optimal one. 
 
 
 ## Bruce
@@ -58,9 +58,9 @@ This part of the project has been estimated to take between 20 and 25 hours.
 As detailed in the specification, users need to be able to perform some basic
 setup tasks when the system is first used, as well as potentially reconfiguring
 the system. The primary goal of Bruce's work on the project is to implement a
-web application written using the SparkJava framework to serve a site
-on the user's local network. This site will be a single page with a small number
-of controls on it. On the configuration site, AJAX requests will provide a
+web application written using the SparkJava framework to serve a site on the
+user's local network. This site will be a single page with a small number of
+controls on it. On the configuration site, AJAX requests will provide a
 convenient way of relaying configuration information back to the Java
 application.
 
@@ -76,49 +76,56 @@ implemented relatively easily by AJAX calls to web framework endpoints.
 
 ### System Image Creation
 Towards the end of the project, Bruce's work will involve investigating
-techniques for creating a burnable Raspberry Pi SD card image. This will involve
-creating a method of including the app in a minimal Linux image, then writing
-build scripts to automate the process.
+techniques for creating a burnable Raspberry Pi SD card image. This will
+involve creating a method of including the app in a minimal Linux image, then
+writing build scripts to automate the process.
 
-A potentially promising approach to this task that has been investigated briefly
-is using a base Arch Linux system together with Docker to run the application in
-a more platform-independent way. However, depending on how the development of
-the project progresses, certain approaches may become more or less viable.
+A potentially promising approach to this task that has been investigated
+briefly is using a base Arch Linux system together with Docker to run the
+application in a more platform-independent way. However, depending on how the
+development of the project progresses, certain approaches may become more or
+less viable.
 
 ## Nick
 
 ### Cloud-based server
 
 #### RESTful API
-Nick will implement the java-powered RESTful API that will interact with both the
-client-side application and the web frontend. This API will be hosted on a cloud-based
-processing engine in order to simplify scalability as the user base of the application
-grows. The API will have thorough unit tests written for every endpoint where practical.
+Nick will implement the java-powered RESTful API that will interact with both
+the client-side application and the web frontend. This API will be hosted on a
+cloud-based processing engine in order to simplify scalability as the user base
+of the application grows. The API will have thorough unit tests written for
+every endpoint where practical.
 
-It is predicted that the API will take approximately 20 hours to develop and test.
+It is predicted that the API will take approximately 20 hours to develop and
+test.
 
 ##### Interaction with client-side application
-The API must have a persistent database in which it can store data transmitted to it
-by the client-side application. The server may perform additional processing on the
-data, such as updating aggregate statistics, prior to storing it in the database.
+The API must have a persistent database in which it can store data transmitted
+to it by the client-side application. The server may perform additional
+processing on the data, such as updating aggregate statistics, prior to storing
+it in the database.
 
 ##### Interaction with web frontend
-The web frontend will allow users to view and compare the data on their animal with
-other animals stored in the database. Nick will implement the necessary REST endpoints
-in the API to allow the relevant data to be trivially retrieved from the database and
-presented for manipulation and representation to the user in the web frontend.
+The web frontend will allow users to view and compare the data on their animal
+with other animals stored in the database. Nick will implement the necessary
+REST endpoints in the API to allow the relevant data to be trivially retrieved
+from the database and presented for manipulation and representation to the user
+in the web frontend.
 
 #### Web Frontend
-Nick will implement the web frontend that will communicate with the API in order to
-present the data to users in a colourful, informative and entertaining fashion. This will
-involve the use of various web frameworks and javascript-powered presentation engines.
+Nick will implement the web frontend that will communicate with the API in
+order to present the data to users in a colourful, informative and entertaining
+fashion. This will involve the use of various web frameworks and
+javascript-powered presentation engines.
 
-It is predicated that the frontend will take approximately 40 hours to develop and test.
+It is predicated that the frontend will take approximately 40 hours to develop
+and test.
 
 ### MoveBank integration
-Nick will organise the processing and importation of data from public sources such as
-MoveBank. This will be delegated to team members depending on the workload and technical
-skills of each member.
+Nick will organise the processing and importation of data from public sources
+such as MoveBank. This will be delegated to team members depending on the
+workload and technical skills of each member.
 
 It is predicated that this will take 10-20 workhours to implement.
 
@@ -128,8 +135,8 @@ It is predicated that this will take 10-20 workhours to implement.
 This part of the project has been estimated to take between 15 and 20 hours.
 
 ### Data Input
-After an image of the monitored habitat has been captured and processed, some data for that frame will be produced, including:
-
+After an image of the monitored habitat has been captured and processed, some
+data for that frame will be produced, including:
 
 * The position of the animal within the habitat in (x,y) coordinates.
 
@@ -144,8 +151,8 @@ The following data will also be used for analysis:
   descriptions or associated activities (sleeping, feeding etc.).
 
 ### Analysis
-The relevant data will be produced/updated and sent to the server
-periodically. The analysis includes:
+The relevant data will be produced/updated and sent to the server periodically.
+The analysis includes:
 
 * The position of the animal and the zones will be used to produce a set of
   (x,y,t,zone) values for use by the front end libraries that will produce
@@ -174,23 +181,22 @@ from the image normalisation module and output a stream of data containing:
 * Time the position was recorded (t)
 
 * Other metadata relevant to the analysis stage, such as the probability of the
-animal being located at those coordinates (m)
+  animal being located at those coordinates (m)
 
 ### Motion tracking algorithm
 For the purpose of implementing the motion tracking algorithm, the open source
-computer vision and graphics library OpenCV will be used to find differences between
-consecutive images in the input stream. Clustering algorithms will then be used to
-determine areas of motion within the cage, the center of the largest area being
-the most likely place where the animal is located.
+computer vision and graphics library OpenCV will be used to find differences
+between consecutive images in the input stream. Clustering algorithms will then
+be used to determine areas of motion within the cage, the center of the largest
+area being the most likely place where the animal is located.
 
 The algorithm will also be able to identify which motions are not caused by the
-animal (either small changes in the habitat, or motions caused by people checking
-the cage).
+animal (either small changes in the habitat, or motions caused by people
+checking the cage).
 
-The main challenge this module presents is to implement an efficient motion tracking
-algorithm capable of running on a low-performance Raspberry Pi, while still producing
-accurate data.
-
+The main challenge this module presents is to implement an efficient motion
+tracking algorithm capable of running on a low-performance Raspberry Pi, while
+still producing accurate data.
 
 ## Will
 **Build system, image capture and testing**
