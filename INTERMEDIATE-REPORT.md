@@ -47,3 +47,18 @@ implementation is as follows:
 
 
 ## Will
+Will has completed the project structure setup mentioned at the previous client
+meeting and has finished the cross-platform component of the project; both
+codebases can now be developed on multiple platforms, and the client can be
+deployed to the raspberry pi as a runnable JAR file that can utilise the
+Raspberry Pi's camera as a webcam.
+
+Since the last meeting, Will has also worked on creating the pipeline that
+handles data input, processing and output. This pipeline is now functional and
+is deployed in the entrypoint of the application.
+
+Will has created a set of demonstrations that allow other team members to
+easily see the output of their part of the code; these demos show the output
+from varying stages of the pipeline to a user. These demos will be useful
+during the end-of-project presentations since we can use them to demonstrate
+how our application works.
