@@ -45,6 +45,18 @@ implementation is as follows:
 
 ## Vlad
 
+Vlad has implemented an initial version of the motion tracker based on the 
+differentiation of images in a three-frame sliding window. The tracker 
+removes some of the noise in the images using a median filter, then detects
+the individual pixels where motion has occurred. It then determines the position
+of the animal by averaging those values. This approach could be further refined
+by running a clustering algorithm to determine the largest area of motion.
+(if the performance of the Raspberry Pi permits it).
+
+Vlad has also worked on a class that permits the transform of plane coordinates
+from camera perspective to normalised perspective and vice-versa. This is used
+in determining the final position of the animal in the normalised view of the
+cage.
 
 ## Will
 Will has completed the project structure setup mentioned at the previous client
