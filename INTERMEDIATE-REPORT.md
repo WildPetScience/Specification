@@ -4,9 +4,6 @@ The majority of the discrete code modules have now been completed and have been
 tested in isolation. This document details the implemented components and 
 describes the testing procedures and results. 
 
-## Overview
-
-
 ## Antoanela
 Antoanela has worked on her two main tasks, noise reduction and corner 
 detection.
@@ -49,7 +46,13 @@ implementation is as follows:
   interest on the images of their animal's cage they are shown.
 
 ## Nick
+Nick wrote the server-side website in Grails with a MongoDB server on his own;
+this website has lots of functional components but needs polishing. The website
+also required quite a lot of modifying to get it working on other developers'
+computers.
 
+This website provides an API that can be used by the client-side application to
+upload data.
 
 ## Stuart
 
