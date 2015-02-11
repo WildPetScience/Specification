@@ -42,6 +42,21 @@ implementation is as follows:
 
 ## Stuart
 
+Since the last meeting, Stuart has implemented an initial version of the
+analysis stage of the pipeline. This accepts (x,y,time,probability) points from
+the image processing stage and zone definition data from the config stage.
+
+The analysis performed so far includes:
+
+* Classifying the points into zones.
+* Tracking the number of visits for each zone.
+* Replacing unlikely points using simple linear interpolation between the
+  current location of the animal and the last known likely location.
+* Computing the speed of the animal as an activity metric.
+* Packaging the data into a class for sending.
+
+Stuart has also worked with Will on creating a demo for the analysis stage of
+the pipeline to show the data analysis in action.
 
 ## Vlad
 
