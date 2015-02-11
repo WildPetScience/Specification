@@ -8,7 +8,18 @@ describes the testing procedures and results.
 
 
 ## Antoanela
+Antoanela has worked on her two main tasks, noise reduction and corner 
+detection.
 
+The noise reduction filter class receives images captured by the camera, 
+converts them to greyscale, reduces the noise and outputs the resulting images.
+
+The corner detection filter class receives as input frames captured by the 
+camera. It detects green markers in the photo which represent the 4 corners of 
+the cage and outputs their coordinates. Testing was done using a video of an 
+image that portrays the corners of a cage and the resulting video displays red 
+circles that mark the corners. Different parameters for identifying the green 
+corner markers will be tested for the real cage.
 
 ## Bruce
 Since the previous client meeting, Bruce has been working on implementing the
